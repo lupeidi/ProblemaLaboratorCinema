@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="UI.MoviesByReservationsController">
+  <VBox layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+    <children>
+      <Label alignment="CENTER" prefWidth="574.0" text="Movie List (ordered by reservations)" textAlignment="CENTER">
+        <font>
+          <Font size="25.0" />
+        </font>
+      </Label>
+      <TableView fx:id="tableViewMovies" prefHeight="366.0" prefWidth="600.0">
+        <columns>
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="84.0" text="ID" fx:id="tableColumnIdMovie">
+            <cellValueFactory>
+              <PropertyValueFactory property="id" />
+            </cellValueFactory>
+          </TableColumn>
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="158.0" text="Title" fx:id="tableColumnNameMovie">
+            <cellValueFactory>
+              <PropertyValueFactory property="title" />
+            </cellValueFactory>
+          </TableColumn>
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="198.0" text="No. of reservations" fx:id="tableColumnBookingsNumber">
+            <cellValueFactory>
+              <PropertyValueFactory property="bookings" />
+            </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+    </children>
+  </VBox>
+</AnchorPane>

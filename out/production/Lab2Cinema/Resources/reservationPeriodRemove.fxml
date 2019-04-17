@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="UI.ReservationPeriodRemoveController">
+  <VBox layoutX="0.0" layoutY="0.0" prefHeight="500.0" prefWidth="800.0">
+    <children>
+      <Label alignment="CENTER" prefWidth="800.0" text="Reservation List" textAlignment="CENTER">
+        <font>
+          <Font size="25.0" />
+        </font>
+      </Label>
+      <TableView fx:id="tableViewReservations" prefHeight="281.0" prefWidth="800.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ID" fx:id="tableColumnIdReservation">
+            <cellValueFactory>
+              <PropertyValueFactory property="id" />
+            </cellValueFactory>
+          </TableColumn>
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="111.0" text="ID Movie" fx:id="tableColumnMovieReservation">
+            <cellValueFactory>
+              <PropertyValueFactory property="id_movie" />
+            </cellValueFactory>
+          </TableColumn>
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="118.0" text="ID Client" fx:id="tableColumnClientReservation">
+            <cellValueFactory>
+              <PropertyValueFactory property="id_client" />
+            </cellValueFactory>
+          </TableColumn>
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="95.0" text="Date" fx:id="tableColumnReservationDate">
+            <cellValueFactory>
+              <PropertyValueFactory property="date" />
+            </cellValueFactory>
+          </TableColumn>
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="90.0" text="Time" fx:id="tableColumnReservationTime">
+            <cellValueFactory>
+              <PropertyValueFactory property="hour" />
+            </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" prefHeight="54.0" prefWidth="800.0" text="Remove reservations in specified period" textAlignment="CENTER">
+        <font>
+          <Font size="20.0" />
+        </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="79.0" prefWidth="800.0">
+        <children>
+          <TextField fx:id="startDay" prefWidth="200.0" promptText="start Day" />
+          <TextField fx:id="startMonth" prefWidth="200.0" promptText="start Month" />
+          <TextField fx:id="startYear" prefWidth="200.0" promptText="start Year" />
+          <TextField fx:id="endDay" alignment="BOTTOM_LEFT" prefWidth="200.0" promptText="end Day" />
+          <TextField fx:id="endMonth" alignment="BOTTOM_LEFT" prefWidth="200.0" promptText="end Month" />
+          <TextField fx:id="endYear" prefWidth="200.0" promptText="end Year" />
+        </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="79.0" prefWidth="800.0">
+        <children>
+          <Button id="btnReservationDelete" fx:id="removeButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#removeReservationsClick" text="Remove" textAlignment="CENTER" />
+          <Button id="btnReservationDelete" fx:id="cancelButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#cancelClick" text="Cancel" textAlignment="CENTER" />
+          <Button id="btnReservationDelete" fx:id="undoButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnReservationsRemoveUndoClick" text="Undo" textAlignment="CENTER" />
+          <Button id="btnReservationDelete" fx:id="redoButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnReservationsRemoveRedoClick" text="Redo" textAlignment="CENTER" />
+        </children>
+      </HBox>
+    </children>
+  </VBox>
+</AnchorPane>

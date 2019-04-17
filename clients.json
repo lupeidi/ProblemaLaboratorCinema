@@ -1,0 +1,5 @@
+{"firstName":"dfghj","lastName":"fghjk","cnp":"1234567891019","birthdayDate":{"year":2000,"month":10,"day":1},"registrationDate":{"year":2018,"month":10,"day":10},"points":0,"id":"121"}
+{"firstName":"Maria","lastName":"Pop","cnp":"1234567891011","birthdayDate":{"year":2000,"month":10,"day":2},"registrationDate":{"year":2010,"month":12,"day":1},"points":12,"id":"1"}
+{"firstName":"Ionut","lastName":"Marin","cnp":"1234567891012","birthdayDate":{"year":1990,"month":4,"day":5},"registrationDate":{"year":2015,"month":8,"day":9},"points":20,"id":"2"}
+{"firstName":"Ana","lastName":"Petra","cnp":"1234567891013","birthdayDate":{"year":1996,"month":3,"day":21},"registrationDate":{"year":2018,"month":10,"day":2},"points":30,"id":"3"}
+{"firstName":"Andrei","lastName":"Ardei","cnp":"1234567891014","birthdayDate":{"year":1989,"month":6,"day":6},"registrationDate":{"year":2017,"month":10,"day":2},"points":0,"id":"4"}

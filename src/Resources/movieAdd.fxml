@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.cell.TextFieldTableCell?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" prefHeight="456.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="UI.MovieAddController">
+  <VBox>
+    <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="402.0" text="Add movie:" textAlignment="CENTER">
+      <font>
+        <Font size="25.0" />
+      </font>
+    </Label>
+    <Separator prefWidth="200.0" />
+    <HBox alignment="CENTER" prefHeight="369.0" prefWidth="402.0">
+      <children>
+        <VBox prefHeight="301.0" prefWidth="202.00009999999747">
+          <children>
+            <Label alignment="CENTER" prefWidth="201.0" text="Id" textAlignment="CENTER">
+              <font>
+                <Font size="20.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label alignment="CENTER" font="$x1" prefWidth="201.0" text="Title" textAlignment="CENTER" />
+            <Label alignment="CENTER" font="$x1" prefWidth="201.0" text="Release Year" textAlignment="CENTER" />
+            <Label alignment="CENTER" font="$x1" prefWidth="201.0" text="Price" textAlignment="CENTER" />
+          </children>
+        </VBox>
+        <VBox prefHeight="369.0" prefWidth="187.0">
+          <children>
+            <TextField id="txtId" fx:id="spinId" prefWidth="200.0" />
+            <TextField id="txtId" fx:id="txtName" prefWidth="200.0" />
+            <TextField fx:id="txtReleaseYear" prefWidth="200.0" />
+            <TextField fx:id="txtPrice" prefWidth="200.0" />
+            <CheckBox fx:id="chkAiring" alignment="CENTER" contentDisplay="CENTER" font="$x1" graphicTextGap="5.0" mnemonicParsing="false" text="Airing" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="false" />
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+    <Separator prefWidth="200.0" />
+    <Button id="btnMovieAdd" fx:id="btnAdd" contentDisplay="CENTER" onAction="#btnMovieInsertClick" text="Add" textAlignment="CENTER" textOverrun="CLIP" />
+    <Button id="btnMovieAdd" fx:id="btnCancel" contentDisplay="CENTER" onAction="#btnCancelClick" text="Cancel" textAlignment="CENTER" textOverrun="CLIP" />
+  </VBox>
+</HBox>

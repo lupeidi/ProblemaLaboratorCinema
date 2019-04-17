@@ -1,0 +1,4 @@
+{"title":"Captain Marvel ","releaseYear":2019,"price":20.0,"airing":true,"bookings":2,"id":"1"}
+{"title":"Thor","releaseYear":2018,"price":10.0,"airing":false,"bookings":0,"id":"2"}
+{"title":"Hulk","releaseYear":2019,"price":12.0,"airing":true,"bookings":2,"id":"3"}
+{"title":"Avengers","releaseYear":2017,"price":10.0,"airing":false,"bookings":0,"id":"4"}
